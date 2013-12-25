@@ -69,8 +69,7 @@ class Auth extends CI_Controller
 						$this->form_validation->set_value('remember'),
 						$data['login_by_username'],
 						$data['login_by_email'])) {								// success
-					$this->load->view('auth/login_success', $data);
-					echo "<script>self.parent.location.reload();</script>";
+					redirect('/');
 
 				} else {
 					$errors = $this->tank_auth->get_error_message();
