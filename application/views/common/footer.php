@@ -34,17 +34,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-3">
-                        <small class="text-muted">&copy; <?php echo date('Y');?> <a href="<?php echo base_url();?>">Mangorate Inc.</a></small>
+                        <small class="text-muted">&copy; <?php echo date('Y');?> <a href="<?php echo base_url();?>">Akij Ceramics Ltd.</a></small>
                     </div>
                     <div class="col-sm-6 text-center">
                         <ul>
-                            <li><a href="#">Dashboard</a></li>
-                            <li>&middot;</li>
                             <li><a href="#">Terms of Service</a></li>
                             <li>&middot;</li>
                             <li><a href="#">Privacy Policy</a></li>
-                            <li>&middot;</li>
-                            <li><a href="#">Contact us</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-3 text-right">

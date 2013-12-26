@@ -21,8 +21,16 @@
 															<form action="<?php echo base_url(); ?>product/add" method="post" id="parsley_addcat">
 															<div class="modal-body">
 																<div class="form_sep">
-																	<label for="product_name" class="req">Product Name</label>
-																	<input id="product_name" name="product_name" class="form-control parsley-validated" data-required="true" type="text">
+																	<label for="product_category" class="req">Product Category</label>
+																	<select name="product_category" id="add_par" class="form-control">
+																		<?php
+																		foreach ($all_product_category as $key => $value) {							
+																		?>
+																		<option value="<?php echo $value['product_category_id']; ?>"><?php echo $value['product_category_name']; ?></option>
+																		<?php						
+																		}																	
+																		?>				
+					                                                </select>
 																</div>
 																<div class="form_sep">
 																	<div class="col-sm-6 start">
@@ -53,7 +61,7 @@
 										<thead>
 											<tr>
 												<th width="10%">ID</th>
-												<th width="30%">Product Name</th>
+												<th width="30%">Product Category</th>
 												<th width="30%">Product Code</th>
 												<th width="20%">Product Price</th>
 												<th width="10%">Change</th>
@@ -71,8 +79,16 @@
 												<form action="<?php echo base_url(); ?>product/edit" method="post" id="parsley_editcat">
 												<div class="modal-body">
 													<div class="form_sep">
-														<label for="product_name" class="req">Product Name</label>
-														<input id="edit_product_name" name="product_name" class="form-control parsley-validated" data-required="true" type="text">
+														<label for="edit_product_category" class="req">Product Category</label>				
+														<select name="product_category" id="edit_par" class="form-control">
+															<?php
+															foreach ($all_product_category as $key => $value) {							
+															?>
+															<option value="<?php echo $value['product_category_id']; ?>"><?php echo $value['product_category_name']; ?></option>
+															<?php						
+															}																	
+															?>				
+					                                    </select>
 														<input id="edit_product_id" name="product_id" type="hidden" value="">
 													</div>	
 													<div class="form_sep">

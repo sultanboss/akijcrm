@@ -83,6 +83,37 @@
                 });
             }
 
+            if($('#product_category_table').length) {
+                $('#product_category_table').dataTable({
+                    "sPaginationType": "bootstrap_full",
+                    "bSort": false,
+                    "iDisplayLength": 25,
+                    "bProcessing": true,
+                    "bServerSide": true,
+                    "sAjaxSource": base_url + "product/categorydata",
+                    "sServerMethod": "POST",
+                    "sDom": "R<'dt-top-row'Clf>r<'dt-wrapper't><'dt-row dt-bottom-row'<'row'<'col-sm-6'i><'col-sm-6 text-right'p>>",
+                    "fnInitComplete": function(oSettings, json) {
+                        $('.ColVis_Button').addClass('btn btn-info btn-sm').html('Columns <span class="icon-caret-down"></span>');
+                        
+                        $('#product_category_table').delegate('.par_cat_edit', 'click', function() {
+                            $("#edit_product_category_name").val($(this).attr('data-name'));
+                            $("#edit_product_category_id").val($(this).attr('data-id'));
+                        });
+
+                        $('#product_category_table').delegate('.bootbox_confirm', 'click', function(e) {
+                            e.preventDefault();
+                            var link = $(this).attr("href");     
+                            bootbox.confirm("<span class='icon-question icon-4x dil-icon'></span>Are you sure you want to delete this item?", function(result) {
+                                if(result == true) {
+                                    location.href = link;
+                                }
+                            }); 
+                        });
+                    }
+                });
+            }
+
             if($('#groups_table').length) {
                 $('#groups_table').dataTable({
                     "sPaginationType": "bootstrap_full",
@@ -162,7 +193,7 @@
                         $('.ColVis_Button').addClass('btn btn-info btn-sm').html('Columns <span class="icon-caret-down"></span>');
                         
                         $('#product_table').delegate('.pro_edit', 'click', function() {
-                            $("#edit_product_name").val($(this).attr('data-name'));
+                            $("#edit_par").select2("val", $(this).attr('data-category'));
                             $("#edit_product_id").val($(this).attr('data-id'));
                             $("#edit_product_price").val($(this).attr('data-price'));                            
                             $("#edit_product_code").val($(this).attr('data-code'));

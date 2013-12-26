@@ -102,7 +102,8 @@ class Enquiry_model extends CI_Model {
 
     function get_product() 
     {
-        $query = $this->db->get('product');
+        $this->db->where('product_category = product_category_id');
+        $query = $this->db->get('product, product_category');
         return $query->result_array();        
     }
 

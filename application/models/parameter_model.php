@@ -99,7 +99,6 @@ class Parameter_model extends CI_Model {
         $res = $this->datatables->generate();
         
         return $res;
-
     }
 
 }

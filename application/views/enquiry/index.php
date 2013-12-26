@@ -27,18 +27,18 @@
 																			<div class="form_sep">
 																				<div class="col-sm-6 start">
 																					<label for="enquiry_name" class="req">Name</label>
-																					<input id="enquiry_name" name="enquiry_name" class="form-control parsley-validated" data-required="true" type="text">
+																					<input id="enquiry_name" name="enquiry_name" class="form-control" type="text">
 																				</div>
 																				<div class="col-sm-6 end">
 																					<label for="enquiry_contact" class="req">Contact Person</label>
-																					<input id="enquiry_contact" name="enquiry_contact" class="form-control parsley-validated" data-required="true" type="text">
+																					<input id="enquiry_contact" name="enquiry_contact" class="form-control" type="text">
 																				</div>
 																			</div>
 																			<div class="form_sep">
 																				<div class="col-sm-6 start">																				
 																					<label for="enquiry_date" class="req">Date</label>
 																					<div class="input-group date ebro_datepicker" data-date-format="yyyy-mm-dd" data-date-autoclose="true">
-									                                                    <input id="enquiry_date" name="enquiry_date" class="form-control parsley-validated" data-required="true" type="text">
+									                                                    <input id="enquiry_date" name="enquiry_date" class="form-control" type="text">
 																						<span class="input-group-addon"><i class="icon-calendar"></i></span>
 									                                                </div>																					
 																				</div>
@@ -62,11 +62,11 @@
 																			<div class="form_sep">
 																				<div class="col-sm-6 start">
 																					<label for="enquiry_phone" class="req">Telephone</label>
-																					<input id="enquiry_phone" name="enquiry_phone" class="form-control parsley-validated" data-required="true" data-type="phone" type="text">
+																					<input id="enquiry_phone" name="enquiry_phone" class="form-control" data-type="phone" type="text">
 																				</div>
 																				<div class="col-sm-6 end">
 																					<label for="enquiry_email" class="req">Email</label>
-																					<input id="enquiry_email" name="enquiry_email" class="form-control parsley-validated" data-required="true" data-type="email" type="text">
+																					<input id="enquiry_email" name="enquiry_email" class="form-control" data-type="email" type="text">
 																				</div>
 																			</div>
 																			<div class="form_sep">
@@ -102,7 +102,7 @@
 																								<?php
 																								foreach ($products as $key => $value) {							
 																								?>
-																								<option id="<?php echo $value['product_price']; ?>" value="<?php echo $value['product_id']; ?>"><?php echo $value['product_name']; ?></option>
+																								<option id="<?php echo $value['product_price']; ?>" value="<?php echo $value['product_id']; ?>"><?php echo $value['product_code'].' - '.$value['product_category_name']; ?></option>
 																								<?php						
 																								}																	
 																								?>				
@@ -163,19 +163,19 @@
 																			<div class="form_sep">
 																				<div class="col-sm-6 start">
 																					<label for="enquiry_name" class="req">Name</label>
-																					<input id="enquiry_name" name="enquiry_name" class="form-control parsley-validated" data-required="true" type="text">
+																					<input id="enquiry_name" name="enquiry_name" class="form-control" type="text">
 																					<input id="enquiry_id" name="enquiry_id" type="hidden">
 																				</div>
 																				<div class="col-sm-6 end">
 																					<label for="enquiry_contact" class="req">Contact Person</label>
-																					<input id="enquiry_contact" name="enquiry_contact" class="form-control parsley-validated" data-required="true" type="text">
+																					<input id="enquiry_contact" name="enquiry_contact" class="form-control" type="text">
 																				</div>
 																			</div>
 																			<div class="form_sep">
 																				<div class="col-sm-6 start">																				
 																					<label for="enquiry_date" class="req">Date</label>
 																					<div class="input-group date ebro_datepicker" data-date-format="yyyy-mm-dd" data-date-autoclose="true">
-									                                                    <input id="enquiry_date" name="enquiry_date" class="form-control parsley-validated" data-required="true" type="text">
+									                                                    <input id="enquiry_date" name="enquiry_date" class="form-control" type="text">
 																						<span class="input-group-addon"><i class="icon-calendar"></i></span>
 									                                                </div>																					
 																				</div>
@@ -199,11 +199,11 @@
 																			<div class="form_sep">
 																				<div class="col-sm-6 start">
 																					<label for="enquiry_phone" class="req">Telephone</label>
-																					<input id="enquiry_phone" name="enquiry_phone" class="form-control parsley-validated" data-required="true" data-type="phone" type="text">
+																					<input id="enquiry_phone" name="enquiry_phone" class="form-control" data-type="phone" type="text">
 																				</div>
 																				<div class="col-sm-6 end">
 																					<label for="enquiry_email" class="req">Email</label>
-																					<input id="enquiry_email" name="enquiry_email" class="form-control parsley-validated" data-required="true" data-type="email" type="text">
+																					<input id="enquiry_email" name="enquiry_email" class="form-control" data-type="email" type="text">
 																				</div>
 																			</div>
 																			<div class="form_sep">
@@ -239,7 +239,7 @@
 																								<?php
 																								foreach ($products as $key => $value) {							
 																								?>
-																								<option id="<?php echo $value['product_price']; ?>" value="<?php echo $value['product_id']; ?>"><?php echo $value['product_name']; ?></option>
+																								<option id="<?php echo $value['product_price']; ?>" value="<?php echo $value['product_id']; ?>"><?php echo $value['product_code'].' - '.$value['product_category_name']; ?></option>
 																								<?php						
 																								}																	
 																								?>				

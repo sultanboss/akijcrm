@@ -147,13 +147,13 @@
 						<ul>
 							<li><a href="<?php echo base_url();?>enquiry">Enquiry</a></li>
 							<li><a href="<?php echo base_url();?>followup">Followup</a></li>
-							<li><a href="javascript:void(0)">Closure</a></li>
 						</ul>
 					</li>
 					<li>
 						<a href="javascript:void(0)">Master</a>
 						<ul>
 							<li><a href="<?php echo base_url();?>product">Product</a></li>
+							<li><a href="<?php echo base_url();?>product/category">Product Category</a></li>
 							<li><a href="<?php echo base_url();?>parameter">Parameter</a></li>
 							<li><a href="<?php echo base_url();?>parameter/type">Parameter Type</a></li>
 						</ul>

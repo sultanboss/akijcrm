@@ -52,7 +52,7 @@
 																				<div class="col-sm-6 start">																				
 																					<label for="enquiry_date" class="req">Date</label>
 																					<div class="input-group date" data-date-format="dd-mm-yyyy" data-date-autoclose="true">
-									                                                    <input id="enquiry_date" name="enquiry_date" readonly="true" class="form-control parsley-validated" data-required="true" type="text">
+									                                                    <input id="enquiry_date" name="enquiry_date" readonly="true" class="form-control" type="text">
 																						<span class="input-group-addon"><i class="icon-calendar"></i></span>
 									                                                </div>																					
 																				</div>

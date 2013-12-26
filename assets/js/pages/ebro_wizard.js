@@ -11,6 +11,7 @@
 				//* wizard
 				wizard_form.steps({
 					headerTag: "h4",
+					enableAllSteps: true,
 					bodyTag: "fieldset",
 					transitionEffect: "slideLeft",
 					labels: {
@@ -134,6 +135,7 @@
 				//* wizard
 				wizard_form.steps({
 					headerTag: "h4",
+					enableAllSteps: true,
 					bodyTag: "fieldset",
 					transitionEffect: "slideLeft",
 					labels: {
@@ -249,6 +251,7 @@
 				//* wizard
 				wizard_form.steps({
 					headerTag: "h4",
+					enableAllSteps: true,
 					bodyTag: "fieldset",
 					transitionEffect: "slideLeft",
 					labels: {
