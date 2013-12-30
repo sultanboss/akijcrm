@@ -161,9 +161,8 @@
 					<li>
 						<a href="javascript:void(0)">Reports</a>
 						<ul>
-							<li><a href="javascript:void(0)">Enquiry</a></li>
-							<li><a href="javascript:void(0)">Followup</a></li>
-							<li><a href="javascript:void(0)">Status</a></li>
+							<li><a href="<?php echo base_url();?>reports/enquiry">Enquiry</a></li>
+							<li><a href="<?php echo base_url();?>reports/followup">Followup</a></li>
 						</ul>
 					</li>
 					<li>

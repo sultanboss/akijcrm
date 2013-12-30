@@ -83,7 +83,7 @@
 																			<table id="enquiry_product_table" class="table table-striped table-hover table-modal">
 																				<thead>
 																					<tr>
-																						<th width="40%">Product Name</th>
+																						<th width="40%">Product Code</th>
 																						<th width="18%">Qty</th>
 																						<th width="18%">Rate</th>
 																						<th width="18%">Amount</th>																							
@@ -102,7 +102,7 @@
 																								<?php
 																								foreach ($products as $key => $value) {							
 																								?>
-																								<option id="<?php echo $value['product_price']; ?>" value="<?php echo $value['product_id']; ?>"><?php echo $value['product_code'].' - '.$value['product_category_name']; ?></option>
+																								<option id="<?php echo $value['product_price']; ?>" value="<?php echo $value['product_id']; ?>"><?php echo $value['product_code']; ?></option>
 																								<?php						
 																								}																	
 																								?>				
@@ -220,7 +220,7 @@
 																			<table id="enquiry_edit_product_table" class="table table-striped table-hover table-modal">
 																				<thead>
 																					<tr>
-																						<th width="40%">Product Name</th>
+																						<th width="40%">Product Code</th>
 																						<th width="18%">Qty</th>
 																						<th width="18%">Rate</th>
 																						<th width="18%">Amount</th>																							
@@ -239,7 +239,7 @@
 																								<?php
 																								foreach ($products as $key => $value) {							
 																								?>
-																								<option id="<?php echo $value['product_price']; ?>" value="<?php echo $value['product_id']; ?>"><?php echo $value['product_code'].' - '.$value['product_category_name']; ?></option>
+																								<option id="<?php echo $value['product_price']; ?>" value="<?php echo $value['product_id']; ?>"><?php echo $value['product_code']; ?></option>
 																								<?php						
 																								}																	
 																								?>				

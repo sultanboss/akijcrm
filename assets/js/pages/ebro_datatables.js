@@ -23,7 +23,7 @@
             if($('#parameter_table').length) {
                 $('#parameter_table').dataTable({
                     "sPaginationType": "bootstrap_full",
-                    "bSort": false,
+                    "bSort": true,
                     "iDisplayLength": 25,
                     "bProcessing": true,
                     "bServerSide": true,
@@ -52,10 +52,73 @@
                 });
             }
 
+            if($('#report_list_table').length) {
+                $('#report_list_table').dataTable({
+                    "sPaginationType": "bootstrap_full",
+                    "bSort": true,
+                    "iDisplayLength": 25,
+                    "sDom": "R<'dt-top-row'ClfT>r<'dt-wrapper't><'dt-row dt-bottom-row'<'row'<'col-sm-6'i><'col-sm-6 text-right'p>>",
+                    "oTableTools": {
+                        "aButtons": [
+                            "copy",
+                            "print",
+                            {
+                                "sExtends":    "collection",
+                                "sButtonText": 'Save <span class="caret" />',
+                                "aButtons":    [ "csv", "xls", "pdf" ]
+                            }
+                        ],
+                        "sSwfPath": base_url + "assets/js/lib/dataTables/extras/TableTools/media/swf/copy_csv_xls_pdf.swf"
+                    }
+                });
+            }
+
+            if($('#report_product_table').length) {
+                $('#report_product_table').dataTable({
+                    "sPaginationType": "bootstrap_full",
+                    "bSort": true,
+                    "iDisplayLength": 25,
+                    "sDom": "R<'dt-top-row'ClfT>r<'dt-wrapper't><'dt-row dt-bottom-row'<'row'<'col-sm-6'i><'col-sm-6 text-right'p>>",
+                    "oTableTools": {
+                        "aButtons": [
+                            "copy",
+                            "print",
+                            {
+                                "sExtends":    "collection",
+                                "sButtonText": 'Save <span class="caret" />',
+                                "aButtons":    [ "csv", "xls", "pdf" ]
+                            }
+                        ],
+                        "sSwfPath": base_url + "assets/js/lib/dataTables/extras/TableTools/media/swf/copy_csv_xls_pdf.swf"
+                    }
+                });
+            }
+
+            if($('#followup_list_table').length) {
+                $('#followup_list_table').dataTable({
+                    "sPaginationType": "bootstrap_full",
+                    "bSort": true,
+                    "iDisplayLength": 25,
+                    "sDom": "R<'dt-top-row'ClfT>r<'dt-wrapper't><'dt-row dt-bottom-row'<'row'<'col-sm-6'i><'col-sm-6 text-right'p>>",
+                    "oTableTools": {
+                        "aButtons": [
+                            "copy",
+                            "print",
+                            {
+                                "sExtends":    "collection",
+                                "sButtonText": 'Save <span class="caret" />',
+                                "aButtons":    [ "csv", "xls", "pdf" ]
+                            }
+                        ],
+                        "sSwfPath": base_url + "assets/js/lib/dataTables/extras/TableTools/media/swf/copy_csv_xls_pdf.swf"
+                    }
+                });
+            }
+
             if($('#parameter_type_table').length) {
                 $('#parameter_type_table').dataTable({
                     "sPaginationType": "bootstrap_full",
-                    "bSort": false,
+                    "bSort": true,
                     "iDisplayLength": 25,
                     "bProcessing": true,
                     "bServerSide": true,
@@ -86,7 +149,7 @@
             if($('#product_category_table').length) {
                 $('#product_category_table').dataTable({
                     "sPaginationType": "bootstrap_full",
-                    "bSort": false,
+                    "bSort": true,
                     "iDisplayLength": 25,
                     "bProcessing": true,
                     "bServerSide": true,
@@ -117,7 +180,7 @@
             if($('#groups_table').length) {
                 $('#groups_table').dataTable({
                     "sPaginationType": "bootstrap_full",
-                    "bSort": false,
+                    "bSort": true,
                     "iDisplayLength": 25,
                     "bProcessing": true,
                     "bServerSide": true,
@@ -148,7 +211,7 @@
             if($('#users_table').length) {
                 $('#users_table').dataTable({
                     "sPaginationType": "bootstrap_full",
-                    "bSort": false,
+                    "bSort": true,
                     "iDisplayLength": 25,
                     "bProcessing": true,
                     "bServerSide": true,
@@ -182,7 +245,7 @@
             if($('#product_table').length) {
                 $('#product_table').dataTable({
                     "sPaginationType": "bootstrap_full",
-                    "bSort": false,
+                    "bSort": true,
                     "iDisplayLength": 25,
                     "bProcessing": true,
                     "bServerSide": true,
@@ -216,7 +279,7 @@
             if($('#enquiry_table').length) {
                 $('#enquiry_table').dataTable({
                     "sPaginationType": "bootstrap_full",
-                    "bSort": false,
+                    "bSort": true,
                     "iDisplayLength": 25,
                     "bProcessing": true,
                     "bServerSide": true,
@@ -279,7 +342,7 @@
             if($('#followup_table').length) {
                 $('#followup_table').dataTable({
                     "sPaginationType": "bootstrap_full",
-                    "bSort": false,
+                    "bSort": true,
                     "iDisplayLength": 25,
                     "bProcessing": true,
                     "bServerSide": true,

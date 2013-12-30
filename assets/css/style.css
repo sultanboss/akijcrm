@@ -1107,3 +1107,18 @@
    		padding-left: 30px;
 	}
 
+	.DTTT {
+		float: right;
+		margin-top: -40px;
+		margin-right: 10px;
+	}
+
+	.bottom-border-no {
+		border-bottom: none;
+	}
+
+	.report-tab {
+		padding-top: 40px;
+	}
+
+
